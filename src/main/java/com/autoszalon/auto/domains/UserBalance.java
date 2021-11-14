@@ -48,5 +48,5 @@ class UserBalance {
     public User getUser() {
         return user;
     }
-    
+   
 }
