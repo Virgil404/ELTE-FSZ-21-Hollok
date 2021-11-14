@@ -27,6 +27,46 @@ class Features {
     
     @ManyToOne
     private Veichle veichle;
+
+    public int getID() {
+        return ID;
+    }
+
+    public String getColor() {
+        return Color;
+    }
+
+    public int getDoors() {
+        return Doors;
+    }
+
+    public boolean isAllwheel() {
+        return Allwheel;
+    }
+
+    public Veichle getVeichle() {
+        return veichle;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public void setColor(String Color) {
+        this.Color = Color;
+    }
+
+    public void setDoors(int Doors) {
+        this.Doors = Doors;
+    }
+
+    public void setAllwheel(boolean Allwheel) {
+        this.Allwheel = Allwheel;
+    }
+
+    public void setVeichle(Veichle veichle) {
+        this.veichle = veichle;
+    }
     
     
     
