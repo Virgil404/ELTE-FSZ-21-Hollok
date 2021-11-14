@@ -23,7 +23,24 @@ public class Veichle {
     @GeneratedValue
     private int ID;
     private float price;
- /*   private Package package;*/
+    
+  private Package package;
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public float getPrice() {
+        return price;
+    }
     
     @OneToMany
     private List<Features> features;
