@@ -8,6 +8,8 @@ package com.autoszalon.auto.domains;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -23,9 +25,11 @@ public class Veichle {
     @GeneratedValue
     private int ID;
     private float price;
-    
-  private Package package;
-
+   
+   /*
+  @Enumerated(EnumType.STRING)
+  private Carpackage package;
+    */
     public void setID(int ID) {
         this.ID = ID;
     }

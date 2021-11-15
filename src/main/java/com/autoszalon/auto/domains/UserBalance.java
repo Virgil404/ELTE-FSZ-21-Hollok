@@ -15,7 +15,7 @@ import javax.persistence.OneToOne;
  * @author zacco
  */
 @Entity
-class UserBalance {
+public class UserBalance {
     @Id
     @GeneratedValue
     private int ID;

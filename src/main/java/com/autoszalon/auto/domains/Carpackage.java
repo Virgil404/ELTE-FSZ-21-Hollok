@@ -9,8 +9,10 @@ package com.autoszalon.auto.domains;
  *
  * @author zacco
  */
-public enum Package {
+public enum Carpackage {
     
-    STANDARD,GOLD,PLATINUM
+    STANDARD,
+    GOLD,
+    PLATINUM
     
 }

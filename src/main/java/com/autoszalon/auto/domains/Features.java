@@ -24,7 +24,10 @@ class Features {
     private int Doors;
     private boolean Allwheel;
     
+    Features(){
+        super();
     
+    }
     @ManyToOne
     private Veichle veichle;
 

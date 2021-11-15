@@ -5,14 +5,15 @@
  */
 package com.autoszalon.auto.repositorys;
 
-import com.autoszalon.auto.domains.User;
+import com.autoszalon.auto.domains.UserBalance;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  *
  * @author zacco
  */
-public interface Userrepository extends CrudRepository<User,Integer> {
+public interface Userbalancerepository extends CrudRepository<UserBalance,Integer> {
+    
     
     
 }
