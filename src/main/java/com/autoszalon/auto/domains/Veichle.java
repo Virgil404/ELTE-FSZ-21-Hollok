@@ -26,10 +26,10 @@ public class Veichle {
     private int ID;
     private float price;
    
-   /*
+   
   @Enumerated(EnumType.STRING)
-  private Carpackage package;
-    */
+  private Carpackage carpackage;
+    
     public void setID(int ID) {
         this.ID = ID;
     }

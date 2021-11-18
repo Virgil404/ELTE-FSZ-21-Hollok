@@ -33,17 +33,17 @@ public class Testdata {
      //@Autowired
   
      public void Createdata(){
-         User Virgil =Createuser("Virgil","titok");
+         User Virgil =createuser("Virgil","titok");
          userrep.save(Virgil);
-         UserBalance usernalance=Createuserbalance(10000,Virgil);
+         UserBalance usernalance=createuserbalance(10000,Virgil);
          ubalancerep.save(usernalance);
-         User Jani =Createuser("Jani","jelszo123");
+         User Jani =createuser("Jani","jelszo123");
          userrep.save(Jani);
-         UserBalance janibalance=Createuserbalance(1000000,Jani);
+         UserBalance janibalance=createuserbalance(1000000,Jani);
          ubalancerep.save(janibalance);
        
          
-         Veichle veichle=Createveichle(2000);
+         Veichle veichle=createveichle(2000);
          vehrep.save(veichle);
      
      
@@ -53,7 +53,7 @@ public class Testdata {
      
      
      
-private User Createuser(String username, String Password){
+private User createuser(String username, String Password){
     User user =new User() ;
     user.setPassword(Password);
     user.setUsername(username);
@@ -62,13 +62,13 @@ private User Createuser(String username, String Password){
 
 }
     
-private Veichle Createveichle(int price){
+private Veichle createveichle(int price){
 Veichle veichle =new Veichle();
 veichle.setPrice(price);
 return veichle;
 }
 
-public UserBalance Createuserbalance(float amount,User user){
+public UserBalance createuserbalance(float amount,User user){
 
 UserBalance userbalance =new UserBalance();
 
