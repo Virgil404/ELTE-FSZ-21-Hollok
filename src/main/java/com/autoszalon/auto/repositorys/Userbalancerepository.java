@@ -14,6 +14,8 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface Userbalancerepository extends CrudRepository<UserBalance,Integer> {
     
-    
+    /**
+     * jani
+     */
     
 }
