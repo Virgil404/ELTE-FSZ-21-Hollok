@@ -19,5 +19,18 @@ public class Shopbalance {
     @GeneratedValue
     int ID;
     float shopbalance;      
+
+    public int getID() {
+        return ID;
+    }
+
+    public float getShopbalance() {
+        return shopbalance;
+    }
+
+    public void setShopbalance(float shopbalance) {
+        this.shopbalance = shopbalance;
+    }
        
+    
 }

@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 public class Userbalanceservice {
     
     
-    // lehet jobb ötlet a Userservicbe mecsinálni a userbalance-t a userrel együtt szóval ennek servicnek lehet nem sok értelme van 
+    // lehet jobb otlet a Userservicbe mecsinalni a userbalance-t a userrel egyutt szoval ennek servicnek lehet nem sok ertelme van 
     // By Virgil
     @Autowired
     private Userbalancerepository ubalancerep;

@@ -40,13 +40,13 @@ User newuser=createuser(username,Password);
 userrep.save(newuser);
 }
 
-
+/*
 public boolean userexistwithusernameandpassword(String username, String Password){
         User user=userrep.findByusernameAndPassword(username, Password);
          return user.getID()>0;
 
 }
-
+*/
 private boolean userexist(String username){
     
     User user =userrep.findByusername(username);
@@ -55,7 +55,7 @@ private boolean userexist(String username){
 
 public void deleteuser(String username){
     
-     userrep.deletByusername(username);
+     userrep.deleteByusername(username);
 }
 
 
