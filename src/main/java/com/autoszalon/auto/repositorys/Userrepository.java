@@ -14,5 +14,8 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface Userrepository extends CrudRepository<User,Integer> {
         
+        User findByusername(String username);
+        User findByusernameAndPassword(String username,String Password);
+        User deletByusername(String username);
         
 }

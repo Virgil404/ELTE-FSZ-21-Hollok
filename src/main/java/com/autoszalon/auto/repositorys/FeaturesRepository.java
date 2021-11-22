@@ -4,13 +4,13 @@
  */
 package com.autoszalon.auto.repositorys;
 
-import com.autoszalon.auto.domains.Features;
+import com.autoszalon.auto.domains.Carfeauters;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  *
  * @author Nagy
  */
-public interface FeaturesRepository extends CrudRepository<Features,Integer> {
+public interface FeaturesRepository extends CrudRepository<Carfeauters,Integer> {
     
 }

@@ -15,7 +15,7 @@ import javax.persistence.ManyToOne;
  * @author zacco
  */
 @Entity
-class Features {
+ public class Carfeauters {
     
     @Id
     @GeneratedValue
@@ -24,10 +24,6 @@ class Features {
     private int Doors;
     private boolean Allwheel;
     
-    Features(){
-        super();
-    
-    }
     @ManyToOne
     private Veichle veichle;
 

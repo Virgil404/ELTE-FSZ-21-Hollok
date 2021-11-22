@@ -5,6 +5,7 @@
  */
 package com.autoszalon.auto.repositorys;
 
+import com.autoszalon.auto.domains.User;
 import com.autoszalon.auto.domains.UserBalance;
 import org.springframework.data.repository.CrudRepository;
 
@@ -14,8 +15,6 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface Userbalancerepository extends CrudRepository<UserBalance,Integer> {
     
-    /**
-     * pali
-     */
-    
+    UserBalance findByUser(User user);
+    UserBalance deleteByUser(User user);
 }

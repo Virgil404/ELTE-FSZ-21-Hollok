@@ -47,6 +47,6 @@ public class Veichle {
     }
     
     @OneToMany
-    private List<Features> features;
+    private List<Carfeauters> features;
     
 }
