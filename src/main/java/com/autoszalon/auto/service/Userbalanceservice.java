@@ -6,6 +6,7 @@
 package com.autoszalon.auto.service;
 
 import com.autoszalon.auto.domains.User;
+import com.autoszalon.auto.domains.UserBalance;
 import com.autoszalon.auto.repositorys.Userbalancerepository;
 import com.autoszalon.auto.repositorys.Userrepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,18 +20,43 @@ import org.springframework.stereotype.Service;
 public class Userbalanceservice {
     
     
+    // lehet jobb ötlet a Userservicbe mecsinálni a userbalance-t a userrel együtt szóval ennek servicnek lehet nem sok értelme van 
+    // By Virgil
     @Autowired
     private Userbalancerepository ubalancerep;
     
     @Autowired
     private Userrepository userrep;
     
-    public void createuserbalance{
-        Userbalance userbalance=new Userblance();
+    private User finduser(String username){
+    User user=userrep.findByusername(username);
+    return user;
+    }
+    
+    private UserBalance createuserbalance(String username,float amount){
+        User user=finduser(username);
+        UserBalance userbalance=new UserBalance();
+        userbalance.setUserbalance(amount);
+        userbalance.setUser(user);
+        return userbalance;
       }
     
-    public void deleteuserbalance(String Username){
-        User user=userrep.findByusername(Username);
+    public void insertuserbalance(String username,float amount){
+        UserBalance newuserbalance =createuserbalance(username,amount);
+        
+        ubalancerep.save(newuserbalance);   
+    }
+            
+          
+    public void reductmoney(float amount,String username){
+        User user = finduser(username);
+        UserBalance updateduserbalance=ubalancerep.findByUser(user);
+        updateduserbalance.setUserbalance(updateduserbalance.getUserbalance()-amount);
+        ubalancerep.save(updateduserbalance);
+    }
+    
+    public void deleteuserbalance(String username){
+        User user=finduser(username);
         
            ubalancerep.deleteByUser(user);
     
