@@ -21,7 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
  * @author zacco
  */
 @Controller
-public class RegisterController {
+public class registercontroller {
  
 }
 

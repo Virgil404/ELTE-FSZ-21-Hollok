@@ -44,7 +44,7 @@
                     <figure>
                     <img id="k1" src="40047.jpg" class="img-fluid" alt="Responsive image">
                     <img id="k2" src="black-wallpaper-20072315370441.jpg" class="img-fluid" alt="Responsive image">
-                    <figcaption>A k√©p illusztr√°ci√≥</figcaption>
+                    <figcaption>A kÈp illusztr·ciÛ</figcaption>
                     </figure>
                 </div>
             </div>
