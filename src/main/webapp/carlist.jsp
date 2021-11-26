@@ -9,10 +9,10 @@
 <!------ Include the above in your HEAD tag ---------->
 <header>
     <div class="topnav">
-        <a href="index.html">HOME</a>
-        <a href="register.html">REGISTER</a>
-        <a href="login.html">LOGIN</a>
-        <a class="active" href="carlist.html">CARLIST</a>
+        <a href="index.jsp">HOME</a>
+        <a href="register.jsp">REGISTER</a>
+        <a href="login.jsp">LOGIN</a>
+        <a class="active" href="carlist.jsp">CARLIST</a>
       </div>
 </header>
 <body>

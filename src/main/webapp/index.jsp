@@ -8,10 +8,10 @@
 <!------ Include the above in your HEAD tag ---------->
 <header>
     <div class="topnav">
-        <a class="active" href="index.html">HOME</a>
-        <a href="register.html">REGISTER</a>
-        <a href="login.html">LOGIN</a>
-        <a href="carlist.html">CARLIST</a>
+        <a class="active" href="index.jsp">HOME</a>
+        <a href="register.jsp">REGISTER</a>
+        <a href="login.jsp">LOGIN</a>
+        <a href="carlist.jsp">CARLIST</a>
       </div>
 </header>
 <body>
