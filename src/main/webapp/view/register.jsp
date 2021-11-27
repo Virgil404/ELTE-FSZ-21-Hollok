@@ -38,7 +38,7 @@
                                 <input type="password" name="password" id="password" class="form-control">
                                 <br>
                                 <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-danger btn-md" value="adduser">
+                                <input type="submit" name="submit" class="btn btn-danger btn-md" value="Register">
                                 </div>
                             </div>
                         </form>
