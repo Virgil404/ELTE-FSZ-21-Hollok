@@ -1,3 +1,7 @@
+<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib  prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+--%>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -15,13 +19,15 @@
       </div>
 </header>
 <body>
+    
     <div id="register">
         <!--<h3 class="text-center text-white pt-5">Register form</h3>-->
         <div class="container">
             <div id="register-row" class="row justify-content-center align-items-center">
                 <div id="register-column" class="col-md-6">
                     <div id="register-box" class="col-md-12">
-                        <form id="register-form" class="form" action="" method="post">
+                        
+                        <form id="register-form" class="form" action="/adduser" method="post">
                             <h3 class="text-center text-danger">REGISTER</h3>
                             <div class="form-group">
                                 <label for="username" class="text-danger">USERNAME:</label><br>
@@ -32,7 +38,7 @@
                                 <input type="password" name="password" id="password" class="form-control">
                                 <br>
                                 <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-danger btn-md" value="submit">
+                                <input type="submit" name="submit" class="btn btn-danger btn-md" value="adduser">
                                 </div>
                             </div>
                         </form>

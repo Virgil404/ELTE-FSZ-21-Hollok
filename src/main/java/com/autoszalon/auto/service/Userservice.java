@@ -31,12 +31,12 @@ private User createuser(String username, String Password){
 }
 
 
-public void insertuser(String username, String Password) throws Exception{
+public void insertuser(User user) throws Exception{
 
-    if(userexist(username)){
+    if(userexist(user.getUsername())){
         throw new Exception("Username alredy exists");
     }
-User newuser=createuser(username,Password);
+User newuser=user;
 userrep.save(newuser);
 }
 
@@ -50,7 +50,7 @@ public boolean userexistwithusernameandpassword(String username, String Password
 private boolean userexist(String username){
     
     User user =userrep.findByusername(username);
-         return user.getID()>0;
+         return user!=null;
 }
 
 public void deleteuser(String username){

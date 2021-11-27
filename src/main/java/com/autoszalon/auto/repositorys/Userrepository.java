@@ -18,4 +18,6 @@ public interface Userrepository extends CrudRepository<User,Integer> {
        // User findByusernameAndPassword(String username,String Password);
         User deleteByusername(String username);
         
+        User existsByusername(String username);
+        
 }
