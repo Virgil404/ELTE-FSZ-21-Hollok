@@ -24,7 +24,6 @@ import org.springframework.web.servlet.ModelAndView;
  * @author zacco
  */
 @Controller
-<<<<<<< HEAD
 public class RegisterController {
  @Autowired 
     private Userservice userservice;
@@ -40,9 +39,6 @@ public class RegisterController {
      }
     return "redirect:index";
     }
-=======
-public class registercontroller {
->>>>>>> 5fbe91e8e665b575efeeb72a40917680bc81a340
  
 }
 
