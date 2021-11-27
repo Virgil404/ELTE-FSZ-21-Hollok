@@ -12,7 +12,7 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 
 /**
@@ -20,13 +20,28 @@ import javax.persistence.OneToMany;
  * @author zacco
  */
 @Entity
-public class Veichle {
+public class Veichle extends Category {
     
     @Id
     @GeneratedValue
     private int ID;
     private float price;
-   
+
+    public Carpackage getCarpackage() {
+        return carpackage;
+    }
+
+    public Carfeauters getFeatures() {
+        return features;
+    }
+
+    public void setFeatures(Carfeauters features) {
+        this.features = features;
+    }
+
+    public void setCarpackage(Carpackage carpackage) {
+        this.carpackage = carpackage;
+    }
    
   @Enumerated(EnumType.STRING)
   private Carpackage carpackage;
@@ -47,7 +62,7 @@ public class Veichle {
         return price;
     }
     
-    @OneToMany
-    private List<Carfeauters> features;
+    @OneToOne
+    private Carfeauters features;
     
 }

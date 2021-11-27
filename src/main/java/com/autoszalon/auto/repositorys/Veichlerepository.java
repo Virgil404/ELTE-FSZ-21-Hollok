@@ -5,6 +5,7 @@
  */
 package com.autoszalon.auto.repositorys;
 
+import com.autoszalon.auto.domains.Carpackage;
 import com.autoszalon.auto.domains.Veichle;
 import org.springframework.data.repository.CrudRepository;
 
@@ -13,5 +14,5 @@ import org.springframework.data.repository.CrudRepository;
  * @author zacco
  */
 public interface Veichlerepository extends CrudRepository<Veichle,Integer>{
-    
+    Veichle findAllBycarpackage(Carpackage carpackage);
 }

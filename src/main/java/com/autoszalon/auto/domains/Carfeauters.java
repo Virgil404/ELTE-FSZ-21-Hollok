@@ -8,7 +8,7 @@ package com.autoszalon.auto.domains;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -24,7 +24,7 @@ import javax.persistence.ManyToOne;
     private int Doors;
     private boolean Allwheel;
     
-    @ManyToOne
+    @OneToOne
     private Veichle veichle;
 
     public int getID() {
