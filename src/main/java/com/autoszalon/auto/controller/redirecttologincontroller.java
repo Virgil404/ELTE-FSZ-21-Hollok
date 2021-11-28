@@ -4,16 +4,21 @@
  * and open the template in the editor.
  */
 package com.autoszalon.auto.controller;
+
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
+/**
+ *
+ * @author zacco
+ */
 @Controller
-public class logincontroller {
-   @GetMapping("/login")   
-        public String form() 
-        {
-            return"login";}
-        }
- 
+public class redirecttologincontroller {
+  @GetMapping("/login")
+  public String home(Model model) {
+		return "redirect:login.jsp";
+
+	}
+    
+}
