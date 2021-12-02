@@ -19,7 +19,7 @@
 <body>
 
 <form= method="post"> 
-    <div class="form-group">
+    <div class="form-group" action="/orderfilter">
         <label for="colorpick"> Color Picker</label>
         <select class="form-control" id="colorpick">
             <option>Red</option>

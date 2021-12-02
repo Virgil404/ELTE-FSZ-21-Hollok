@@ -33,4 +33,8 @@ public interface Veichlerepository extends CrudRepository<Veichle,Integer>{
     @Query(value = "select Carpackage ,Price ,Allwheel ,Color ,Doors from Category inner join  CARFEAUTERS on  features_id =CARFEAUTERS .id where Allwheel=:Allwheel"
             ,nativeQuery=true)      
     ArrayList<Veichle> findcarsbyAllwheel(@Param ("Allwheel") boolean Allwheel);
+    
+    @Query(value = "select Carpackage ,Price ,Allwheel ,Color ,Doors from Category inner join  CARFEAUTERS on  features_id =CARFEAUTERS .id where Allwheel=:Allwheel and door=:door and price=:price and color=:color"
+            ,nativeQuery=true)      
+    ArrayList<Veichle> findcarsbyAll(@Param ("Allwheel") boolean Allwheel,@Param ("price") float price,@Param ("door") int door,@Param ("color")  String color );
 }
