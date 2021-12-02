@@ -36,6 +36,7 @@ public class RegisterController {
          userservice.insertuser(user);
      } catch (Exception ex) {
          Logger.getLogger(RegisterController.class.getName()).log(Level.SEVERE, null, ex);
+         return "register";
      }
     return "redirect:index";
     }
