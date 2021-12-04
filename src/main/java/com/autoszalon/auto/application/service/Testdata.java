@@ -18,6 +18,7 @@ import com.autoszalon.auto.application.repositorys.Veichlerepository;
 import com.fasterxml.jackson.annotation.JsonFormat.Features;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 /**
@@ -39,8 +40,9 @@ public class Testdata {
     private CarfeautersRepository carfeauterrep;
     
     
-     //@Autowired
-  
+     @Autowired
+       private PasswordEncoder passwordencoder;
+     
      public void Createdata(){
          User Virgil =createuser("Virgil","titok");
          userrep.save(Virgil);
@@ -82,7 +84,7 @@ public class Testdata {
      
 private User createuser(String username, String Password){
     User user =new User() ;
-    user.setPassword(Password);
+    user.setPassword(passwordencoder.encode(Password));
     user.setUsername(username);
 
     return user;

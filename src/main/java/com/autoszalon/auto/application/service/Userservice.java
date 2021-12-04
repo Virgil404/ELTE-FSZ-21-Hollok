@@ -5,9 +5,11 @@
  */
 package com.autoszalon.auto.application.service;
 
+import com.autoszalon.auto.application.Security.ShopUserPrincipal;
 import com.autoszalon.auto.application.domains.User;
 import com.autoszalon.auto.application.repositorys.Userrepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 /**
@@ -58,6 +60,5 @@ public void deleteuser(String username){
      userrep.deleteByusername(username);
 }
 
-
-
 }
+

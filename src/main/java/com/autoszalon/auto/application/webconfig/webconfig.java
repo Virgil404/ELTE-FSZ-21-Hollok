@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.autoszalon.auto.application.DTO;
+package com.autoszalon.auto.application.webconfig;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -30,7 +30,7 @@ public class WebConfig implements WebMvcConfigurer {
 //        resolver.setPrefix("/WEB-INF/views/");
 //        resolver.setSuffix(".jsp");
 //        registry.viewResolver(resolver);
-        registry.jsp("/WEB-INF/views/", ".jsp");
+        registry.jsp("/views/", ".jsp");
     }
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
