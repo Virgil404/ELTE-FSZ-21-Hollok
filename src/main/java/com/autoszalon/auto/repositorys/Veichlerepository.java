@@ -16,6 +16,6 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface Veichlerepository extends CrudRepository<Veichle,Integer>{
     Veichle findAllBycarpackage(Carpackage carpackage);
-    @Query
-    Veichle findcars();
+   // @Query
+   // Veichle findcars();
 }
