@@ -4,9 +4,12 @@
  */
 package com.autoszalon.auto.service;
 
+import com.autoszalon.auto.controller.vehichledtotemp;
+import com.autoszalon.auto.controller.vehiclefinddto;
 import com.autoszalon.auto.domains.Carpackage;
 import com.autoszalon.auto.domains.Veichle;
 import com.autoszalon.auto.repositorys.Veichlerepository;
+import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,4 +28,17 @@ public class vehicleservice {
         public Iterable<Veichle> findAllBycarpackage(Carpackage carpackage){
             return (Iterable<Veichle>) vehiclerepo.findAllBycarpackage(carpackage);
         }
-}
+        public vehiclefinddto transfertovehichlefinddto(vehichledtotemp vehdtotemp){
+            vehiclefinddto vfinddto = new vehiclefinddto(vehdtotemp.getDoors(),vehdtotemp.getCarpackage(), vehdtotemp.getCategory(), vehdtotemp.getColor(), vehdtotemp.isAllwheels(), (int) vehdtotemp.getPrice());
+            return vfinddto;
+        }
+        public Iterable<Veichle> findAlLbycolor(String color) {
+            return vehiclerepo.findcarsbycolor(color);
+        }
+      
+            public Iterable<Veichle> findAlLbyall(boolean Allwheel, float price,int doors, String color) {
+		return vehiclerepo.findcarsbyAll(Allwheel, price, doors, color);
+	}
+            
+        }
+

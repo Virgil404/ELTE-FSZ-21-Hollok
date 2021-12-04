@@ -5,6 +5,7 @@
  */
 package com.autoszalon.auto.controller;
 import com.autoszalon.auto.domains.User;
+import com.autoszalon.auto.service.Userbalanceservice;
 import com.autoszalon.auto.service.Userservice;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -27,13 +28,18 @@ import org.springframework.web.servlet.ModelAndView;
 public class RegisterController {
  @Autowired 
     private Userservice userservice;
+ @Autowired
+    private Userbalanceservice ubalaservice;
  @PostMapping("adduser")
     public String adduser(Adduserdto adduserdto ){
          User user =new User();
          user.setUsername(adduserdto.getUsername());
          user.setPassword(adduserdto.getPassword());
+         
      try {
+        
          userservice.insertuser(user);
+          ubalaservice.insertuserbalance(user, 10000);
      } catch (Exception ex) {
          Logger.getLogger(RegisterController.class.getName()).log(Level.SEVERE, null, ex);
          return "register";

@@ -15,16 +15,18 @@ import com.autoszalon.auto.domains.Categoryenum;
 public class vehiclefinddto {
     private final float price;
     private final Carpackage carpackage;
-    //private final String color;
-    //private final int doors;
+    private final String color;
+    private final int doors;
     private final Categoryenum category;
+    private final boolean Allwheels;
 
-    public vehiclefinddto(float price, Carpackage carpackage, Categoryenum category) {
+    public vehiclefinddto(float price, Carpackage carpackage, Categoryenum category ,String color ,boolean Allwheels ,int doors) {
         this.price = price;
         this.carpackage = carpackage;
-        //this.color = color;
-        //this.doors = doors;
+        this.color = color;
+        this.doors = doors;
         this.category = category;
+        this.Allwheels = Allwheels;
     }
 
     public float getPrice() {
@@ -35,17 +37,22 @@ public class vehiclefinddto {
         return carpackage;
     }
 
-/*    public String getColor() {
+    public String getColor() {
         return color;
     }
 
     public int getDoors() {
         return doors;
-    }*/
+    }
 
     public Categoryenum getCategory() {
         return category;
     }
+
+    public boolean isAllwheels() {
+        return Allwheels;
+    }
+    
     
     
     

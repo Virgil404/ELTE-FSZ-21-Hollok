@@ -33,16 +33,15 @@ public class Userbalanceservice {
     return user;
     }
     
-    private UserBalance createuserbalance(String username,float amount){
-        User user=finduser(username);
+    private UserBalance createuserbalance(User user,float amount){
         UserBalance userbalance=new UserBalance();
         userbalance.setUserbalance(amount);
         userbalance.setUser(user);
         return userbalance;
       }
     
-    public void insertuserbalance(String username,float amount){
-        UserBalance newuserbalance =createuserbalance(username,amount);
+    public void insertuserbalance( User user,float amount){
+        UserBalance newuserbalance =createuserbalance(user,amount);
         
         ubalancerep.save(newuserbalance);   
     }
