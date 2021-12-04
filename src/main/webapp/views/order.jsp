@@ -15,6 +15,10 @@
         <a href="index.jsp">HOME</a>
         <a class="active" href="carlist.jsp">CARLIST</a>
       </div>
+    
+    <form:form action="/logout">
+        <input type="Submit" class="btn btn-primary" value="logout"/>
+    </form:form>
 </header>
 <body>
 
