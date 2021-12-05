@@ -19,6 +19,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  */
 
 public class webconfig {
+    
 @Configuration
 @EnableWebMvc
 @ComponentScan
@@ -34,8 +35,10 @@ public class WebConfig implements WebMvcConfigurer {
     }
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/css/**")
+        registry.addResourceHandler("/views/css/**")
                 .addResourceLocations("classpath:/static/css/");
+         registry.addResourceHandler("/views/source/**")
+                .addResourceLocations("classpath:/static/source/");
     }
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {

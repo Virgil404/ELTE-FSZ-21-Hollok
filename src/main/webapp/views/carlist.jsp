@@ -4,7 +4,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
-<link href="login.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!------ Include the above in your HEAD tag ---------->
 <header>
@@ -18,8 +18,8 @@
 <body>
     <table id="tb1">
         <tr>
-          <th><img src="pickup.png" style="max-width: 100%; height:auto;"><br></th>
-          <th><img src="suv.png" style="max-width: 100%; height:auto;"><br></th>
+          <th><img src="source/pickup.png" style="max-width: 100%; height:auto;"><br></th>
+          <th><img src="source/suv.png" style="max-width: 100%; height:auto;"><br></th>
         </tr>
         <tr>
             <th><br><div class="form-group">
@@ -32,8 +32,8 @@
 
           </tr>
         <tr>
-          <td><img src="sport+.png" style="max-width: 100%; height:auto;"></td>
-          <td><img src="transit.png" style="max-width: 100%; height:auto;"></td>
+          <td><img src="source/sport+.png" style="max-width: 100%; height:auto;"></td>
+          <td><img src="source/transit.png" style="max-width: 100%; height:auto;"></td>
         </tr>
         <tr>
             <th><br><div class="form-group">
@@ -46,8 +46,8 @@
             
           </tr>
         <tr>
-          <td><img src="hothatch.png" style="max-width: 100%; height:auto;"></td>
-          <td><img src="electric.png" style="max-width: 100%; height:auto;"></td>
+          <td><img src="source/hothatch.png" style="max-width: 100%; height:auto;"></td>
+          <td><img src="source/electric.png" style="max-width: 100%; height:auto;"></td>
         </tr>
         <tr>
             <th><br><div class="form-group">
@@ -60,8 +60,8 @@
             
           </tr>
         <tr>
-          <td><img src="sport.png" style="max-width: 100%; height:auto;"></td>
-          <td><img src="compact.png" style="max-width: 100%; height:auto;"></td>
+          <td><img src="source/sport.png" style="max-width: 100%; height:auto;"></td>
+          <td><img src="source/compact.png" style="max-width: 100%; height:auto;"></td>
         </tr>
         <tr>
             <th><br><div class="form-group">
@@ -78,7 +78,7 @@
       <br>
 </body>
 <footer class="footer">
-    <img src="Interface_Facebook.png"> <a class="link" href="https://www.youtube.com/watch?v=jeg_TJvkSjg">FACEBOOK</a>
-    <img src="Interface_Twitter.png"> <a class="link" href="https://www.youtube.com/watch?v=OD3F7J2PeYU">TWITTER &#8192</a>
-    <img src="Interface_Youtube.png"> <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YOUTUBE</a>
+    <img src="source/Interface_Facebook.png"> <a class="link" href="https://www.youtube.com/watch?v=jeg_TJvkSjg">FACEBOOK</a>
+    <img src="source/Interface_Twitter.png"> <a class="link" href="https://www.youtube.com/watch?v=OD3F7J2PeYU">TWITTER &#8192</a>
+    <img src="source/Interface_Youtube.png"> <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YOUTUBE</a>
 </footer>

@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
-<link href="login.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!------ Include the above in your HEAD tag ---------->
 <header>
@@ -22,7 +22,7 @@
 </header>
 <body>
 
-<form= method="post"> 
+<form method="post"> 
     <div class="form-group" action="/orderfilter">
         <label for="colorpick"> Color Picker</label>
         <select class="form-control" id="colorpick">

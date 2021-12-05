@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
-<link href="login.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
 
     <meta charset="UTF-8">
 </head>
@@ -48,8 +48,8 @@
 
                 <div id="kepek">
                     <figure>
-                    <img id="k1" src="40047.jpg" class="img-fluid" alt="Responsive image">
-                    <img id="k2" src="black-wallpaper-20072315370441.jpg" class="img-fluid" alt="Responsive image">
+                    <img id="k1" src="source/40047.jpg" class="img-fluid" alt="Responsive image">
+                    <img id="k2" src="source/black-wallpaper-20072315370441.jpg" class="img-fluid" alt="Responsive image">
                     <figcaption>A kép illusztráció</figcaption>
                     </figure>
                 </div>
@@ -59,8 +59,8 @@
     </div>
 </body>
 <footer class="footer">
-    <img src="Interface_Facebook.png"> <a class="link" href="https://www.youtube.com/watch?v=jeg_TJvkSjg">FACEBOOK</a>
-    <img src="Interface_Twitter.png"> <a class="link" href="https://www.youtube.com/watch?v=OD3F7J2PeYU">TWITTER &#8192</a>
-    <img src="Interface_Youtube.png"> <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YOUTUBE</a>
+    <img src="source/Interface_Facebook.png"> <a class="link" href="https://www.youtube.com/watch?v=jeg_TJvkSjg">FACEBOOK</a>
+    <img src="source/Interface_Twitter.png"> <a class="link" href="https://www.youtube.com/watch?v=OD3F7J2PeYU">TWITTER &#8192</a>
+    <img src="source/Interface_Youtube.png"> <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YOUTUBE</a>
 </footer>
 </html>

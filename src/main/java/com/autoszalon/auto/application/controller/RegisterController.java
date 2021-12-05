@@ -12,6 +12,7 @@ import java.util.logging.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,11 +31,13 @@ public class RegisterController {
     private Userservice userservice;
  @Autowired
     private Userbalanceservice ubalaservice;
+ @Autowired
+ private PasswordEncoder passwordencoder;
  @PostMapping("adduser")
     public String adduser(Adduserdto adduserdto ){
          User user =new User();
          user.setUsername(adduserdto.getUsername());
-         user.setPassword(adduserdto.getPassword());
+         user.setPassword(passwordencoder.encode(adduserdto.getPassword()));
          
      try {
         
