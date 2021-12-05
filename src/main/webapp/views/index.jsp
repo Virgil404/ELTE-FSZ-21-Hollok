@@ -1,3 +1,6 @@
+<%@taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +22,12 @@
         <a href="login.jsp">LOGIN</a>
         <a href="carlist.jsp">CARLIST</a>
       </div>
+    <div>
+        <form:form action="/logout">
+            <input type="submit" value="logout"/>
+        </form:form>
+    </div>
+    User, <sec:authentication property="name"/>
 </header>
 <body>
     <div class="container">

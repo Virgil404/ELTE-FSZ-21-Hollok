@@ -14,6 +14,12 @@
         <a href="login.jsp">LOGIN</a>
         <a class="active" href="carlist.jsp">CARLIST</a>
       </div>
+    <div>
+        <form:form action="/logout">
+            <input type="submit" value="logout"/>
+        </form:form>
+    </div>
+    User, <sec:authentication property="name"/>
 </header>
 <body>
     <table id="tb1">

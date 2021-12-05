@@ -33,7 +33,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .inMemoryAuthentication()
             .withUser("user")
             .password(encoder.encode("password"))
-            .roles("USER");
                
      }
     */
@@ -44,14 +43,16 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
      protected void configure(HttpSecurity http) throws Exception{
          http
           .authorizeRequests()
-          .antMatchers("/index/").permitAll()
-          .antMatchers("/register/").permitAll()
+          .antMatchers("/index/**").permitAll()
+          .antMatchers("/register/**").permitAll()
           .antMatchers("/h2-console/**").permitAll()
            .antMatchers("/views/css/**").permitAll()
            .antMatchers("/views/source/**").permitAll()
           .anyRequest().authenticated()
-            .and()
+           .and()
                 .csrf().ignoringAntMatchers("/h2-console/**")
+           .and()
+                 .headers().frameOptions().sameOrigin()
            .and()
                 .formLogin()
                  .loginPage("/login").permitAll()

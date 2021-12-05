@@ -11,12 +11,19 @@
 <link href="css/login.css" rel="stylesheet">
 <!------ Include the above in your HEAD tag ---------->
 <header>
-    <div class="topnav">
-       <a href="index.jsp">HOME</a>
-        <a class="active" href="register.jsp">REGISTER</a>
+    < <div class="topnav">
+        <a class="active" href="index.jsp">HOME</a>
+        <a href="register.jsp">REGISTER</a>
         <a href="login.jsp">LOGIN</a>
-        <a href="carlist.jsp">CARLIST</a> 
+        <a href="carlist.jsp">CARLIST</a>
       </div>
+    <div>
+        <form:form action="/logout">
+            <input type="submit" value="logout"/>
+        </form:form>
+    </div>
+    User, <sec:authentication property="name"/>
+</header>
 </header>
 <body>
     
