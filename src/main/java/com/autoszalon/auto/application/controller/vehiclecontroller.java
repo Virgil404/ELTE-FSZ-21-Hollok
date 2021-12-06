@@ -1,7 +1,9 @@
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package com.autoszalon.auto.application.controller;
 
 import com.autoszalon.auto.application.domains.User;
@@ -16,10 +18,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+
+
 /**
  *
  * @author Nagy
  */
+
+
 @Controller
 public class vehiclecontroller {
     
@@ -30,6 +36,7 @@ public class vehiclecontroller {
    // @GetMapping("order")
     /*
     public String listVehicle(Model jarmumodel){
+        
         List<vehiclefinddto> carlist = new ArrayList<>();
         
         vehicleservice.findAllVeichle().forEach(h 
@@ -45,6 +52,6 @@ public class vehiclecontroller {
         
     return "order";
     }
+    */
+    }
     
-*/
-}

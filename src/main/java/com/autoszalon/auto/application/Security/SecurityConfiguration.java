@@ -39,7 +39,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
           .antMatchers("/h2-console/**").permitAll()
            .antMatchers("/views/css/login.css").permitAll()
            .antMatchers("/views/source/**").permitAll()
-          .anyRequest().authenticated()
+        
            .and()
                  .csrf().ignoringAntMatchers("/h2-console/**")
            .and()
