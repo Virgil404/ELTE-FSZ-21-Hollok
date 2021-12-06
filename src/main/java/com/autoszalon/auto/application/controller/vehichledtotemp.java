@@ -4,10 +4,6 @@ package com.autoszalon.auto.application.controller;
 import com.autoszalon.auto.application.domains.Carpackage;
 import com.autoszalon.auto.application.domains.Categoryenum;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  *

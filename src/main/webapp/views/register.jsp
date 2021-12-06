@@ -1,7 +1,7 @@
-<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib  prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
---%>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -11,22 +11,20 @@
 <link href="css/login.css" rel="stylesheet">
 <!------ Include the above in your HEAD tag ---------->
 <header>
-    < <div class="topnav">
-        <a class="active" href="index.jsp">HOME</a>
-        <a href="register.jsp">REGISTER</a>
+    <div class="topnav">
+       <a href="index.jsp">HOME</a>
+        <a class="active" href="register.jsp">REGISTER</a>
         <a href="login.jsp">LOGIN</a>
-        <a href="carlist.jsp">CARLIST</a>
+        <a href="carlist.jsp">CARLIST</a> 
       </div>
-    <div>
-        <form:form action="/logout">
-            <input type="submit" value="logout"/>
-        </form:form>
-    </div>
-    User, <sec:authentication property="name"/>
-</header>
+    
 </header>
 <body>
-    
+     <c:if test="${param.error!=null}">
+          <div>
+              something went wrong probably user alredy exists
+          </div>
+        </c:if> 
     <div id="register">
         <!--<h3 class="text-center text-white pt-5">Register form</h3>-->
         <div class="container">

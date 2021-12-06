@@ -33,6 +33,7 @@ public class RegisterController {
     private Userbalanceservice ubalaservice;
  @Autowired
  private PasswordEncoder passwordencoder;
+ 
  @PostMapping("adduser")
     public String adduser(Adduserdto adduserdto ){
          User user =new User();
@@ -42,7 +43,7 @@ public class RegisterController {
      try {
         
          userservice.insertuser(user);
-          ubalaservice.insertuserbalance(user, 10000);
+         ubalaservice.insertuserbalance(user, 10000);
      } catch (Exception ex) {
          Logger.getLogger(RegisterController.class.getName()).log(Level.SEVERE, null, ex);
          return "register";
