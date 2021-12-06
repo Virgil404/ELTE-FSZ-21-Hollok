@@ -26,6 +26,10 @@ public class vehiclefinddto {
         this.category = category;
     }
 
+    public vehiclefinddto(int doors, Carpackage carpackage, Categoryenum category, String color, boolean allwheels, int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public float getPrice() {
         return price;
     }

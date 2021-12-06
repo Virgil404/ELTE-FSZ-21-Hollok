@@ -23,7 +23,7 @@
           
 </header>
 <body>
-       <div> 100000 ${userbalance.balance}</div>
+       <div>  ${userbalance.balance}</div>
     <table id="tb1">
         <tr>
           <th><img src="source/pickup.png" style="max-width: 100%; height:auto;"><br></th>
