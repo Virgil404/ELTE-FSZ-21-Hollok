@@ -16,13 +16,18 @@
         <a href="register.jsp">REGISTER</a>
         <a class="active" href="carlist.jsp">CARLIST</a>
         <div id="profile"> <a class="active">User:<sec:authentication property="name"/></a></div>
+<<<<<<< HEAD
         <div> ${userbalance.userbalance} </div>
+=======
+
+>>>>>>> 2f70b7ccd229e0360fb5afc102e972fa3a96c13d
         <div id="logout"> <a  class="btn btn-primary" href=<c:url value="/logout"/>>LOGOUT</a> </div>
       </div>
     
-     
+          
 </header>
 <body>
+       <div>  ${userbalance.balance}</div>
     <table id="tb1">
         <tr>
           <th><img src="source/pickup.png" style="max-width: 100%; height:auto;"><br></th>

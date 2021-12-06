@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib  prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
-
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -80,5 +80,25 @@ function myFunction() {
 }
 </script>
 </form>
+<<<<<<< HEAD
+=======
+    
+<tabel>
+    <tr>
+        <th>price</th>
+        <th>package</th>
+        <th>color</th>
+        <th>doors</th>
+        <th>category</th>
+    </tr>
+        <c:forEach items="${order}" var="orders">
+    <tr>
+    	<td><c:out value="${orders.price}"/></td>
+        <td><c:out value="${orders.package}"/></td>
+        <td><c:out value="${orders.category}"/></td>
+    </tr>
+	</c:forEach>
+</table>
+>>>>>>> 2f70b7ccd229e0360fb5afc102e972fa3a96c13d
 
 </body>

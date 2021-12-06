@@ -33,15 +33,15 @@ public class vehiclecontroller {
     
     private vehicleservice vehicleservice;
     
-   // @GetMapping("order")
-    /*
+   @GetMapping("order")
+    
     public String listVehicle(Model jarmumodel){
         
         List<vehiclefinddto> carlist = new ArrayList<>();
         
         vehicleservice.findAllVeichle().forEach(h 
-				-> carlist.add(new vehiclefinddto(h.getPrice(), h.getCarpackage(), h.getCategory(), h.isAllwheels()));
-        )
+				-> carlist.add(new vehiclefinddto(h.getPrice(), h.getCarpackage(), h.getCategory()))
+        );
       jarmumodel.addAttribute("order", carlist);
      
       return "order";
@@ -52,6 +52,6 @@ public class vehiclecontroller {
         
     return "order";
     }
-    */
+    
     }
     
