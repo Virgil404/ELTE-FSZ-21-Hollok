@@ -19,7 +19,7 @@
             <input type="submit" value="logout"/>
         </form:form>
     </div>
-    User, <sec:authentication property="name"/>
+    User: <sec:authentication property="name"/>
 </header>
 <body>
     <table id="tb1">

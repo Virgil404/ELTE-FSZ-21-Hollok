@@ -28,10 +28,9 @@
     </c:if> 
     
     <c:if test="{param.logout!=null}">
-        <div>
-            if everything worked as intended you have been logged out 
+        <div class="alert alert-info" role="alert">
+             you have been gnomed
         </div>
-        
     </c:if>
     
     <div id="login">

@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class redirecttoregistercontroller {
   @GetMapping("/")
   public String home(Model model) {
-		return "redirect:register";
+		return "redirect:/views/register.jsp";
 	}
     
 }

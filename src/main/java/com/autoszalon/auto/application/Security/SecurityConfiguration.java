@@ -47,8 +47,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
      protected void configure(HttpSecurity http) throws Exception{
          http
           .authorizeRequests()
-          .antMatchers("/index/**").permitAll()
-          .antMatchers("/register/**").permitAll()
+          .antMatchers("/views/index.jsp").permitAll()
+          .antMatchers("/views/register.jsp").permitAll()
           .antMatchers("/h2-console/**").permitAll()
            .antMatchers("/views/css/**").permitAll()
            .antMatchers("/views/source/**").permitAll()
@@ -60,7 +60,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
            .and()
                 .formLogin()
                  .loginPage("/login").permitAll()
-                 .defaultSuccessUrl("/index", true)
+                 .defaultSuccessUrl("/views/index.jsp", true)
           .and()
                  .logout().permitAll()
          .and().cors().and().csrf().disable();
