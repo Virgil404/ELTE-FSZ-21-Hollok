@@ -135,8 +135,10 @@ body {
   
   #logout {
       padding-left: 96%;
+      position: absolute;
   }
   
   #profile {
       padding-left: 90%;
+      position: absolute;
   }

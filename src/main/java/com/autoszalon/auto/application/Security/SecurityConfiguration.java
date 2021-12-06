@@ -35,12 +35,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
          http
             .authorizeRequests()
                  
-          .antMatchers("/views/index").permitAll()
           .antMatchers("/views/register.jsp").permitAll()
           .antMatchers("/h2-console/**").permitAll()
            .antMatchers("/views/css/login.css").permitAll()
            .antMatchers("/views/source/**").permitAll()
-           .antMatchers("/views/login.jsp").permitAll()
           .anyRequest().authenticated()
            .and()
                  .csrf().ignoringAntMatchers("/h2-console/**")

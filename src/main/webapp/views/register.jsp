@@ -42,7 +42,7 @@
                                 <input type="password" name="password" id="password" class="form-control">
                                 <br>
                                 <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-danger btn-md" value="Register">
+                                <input type="submit" name="submit" class="btn btn-danger btn-md" value="REGISTER">
                                 <a class="btn btn-primary" href="/views/login.jsp" role="button">LOGIN</a>
                                 </div>
                             </div>

@@ -14,7 +14,6 @@
     <div class="topnav">
         <a href="index.jsp">HOME</a>
         <a href="register.jsp">REGISTER</a>
-        <a href="login.jsp">LOGIN</a>
         <a class="active" href="carlist.jsp">CARLIST</a>
         <div id="profile"> <a class="active">User:<sec:authentication property="name"/></a></div>
         
