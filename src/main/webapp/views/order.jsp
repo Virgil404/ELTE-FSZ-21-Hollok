@@ -15,31 +15,37 @@
     <div class="topnav">
         <a href="index.jsp">HOME</a>
         <a class="active" href="carlist.jsp">CARLIST</a>
+        <div id="profile"> <a class="active">User:<sec:authentication property="name"/></a></div>
+        <div id="logout"> <a  class="btn btn-primary" href=<c:url value="/logout"/>>LOGOUT</a> </div>
       </div>
     
-    <form:form action="/logout">
-        <input type="Submit" class="btn btn-primary" value="logout"/>
-    </form:form>
-
-    User, <sec:authentication property="name"/>
 </header>
 <body>
 
 <form method="post"> 
     <div class="form-group" action="/orderfilter">
-        <label for="colorpick"> Color Picker</label>
+        <label id="colorpicker" for="colorpick"> Color Picker</label>
         <select class="form-control" id="colorpick">
-            <option>Red</option>
-            <option>Green</option>
-            <option>Black</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="black">Black</option>
+            <option value="matered">Mate-Red</option>
+            <option value="mategreen">Mate-Green</option>
+            <option value="mateblack">Mate-Black</option>
+            <option value="glossyred">Glossy-Red</option>
+            <option value="glossygreen">Glossy-Green</option>
+            <option value="glossyblack">Glossy-Black</option>
+            <option value="pearlred">pearl-Red</option>
+            <option value="pearlgreen">pearl-Green</option>
+            <option value="pearlblack">pearl-Black</option>
         </select>
 </div> 
     <div class="form-group">
-        <label for="package">Pacgakes</label>
+        <label id="packages" for="package">Pacgakes</label>
         <select class="form-control" id="package">
-            <option>STANDARD</option>
-            <option>GOLD</option>
-            <option>PLATINUM</option>
+            <option value="standard">STANDARD</option>
+            <option value="gold">GOLD</option>
+            <option value="platinum">PLATINUM</option>
         </select>
 </div>
 
@@ -52,29 +58,27 @@
     <input type="email" class="form-control" id="FormControlEmail" placeholder="name@example.com">
     <label for="FormControlAdress">Adress</label>
     <input type="text" class="form-control" placeholder="Budapest, Petofi koz 17">
+    <label for="FormControlCard">Credit Card</label>
+    <input type="text" class="form-control" placeholder="xxxx-xxxx-xxxx-xxxx">
 </div>
-
+<script>
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+</script>
 <br>
 
-<input type="submit" name="compact" class="btn btn-success btn-md" href="order.jsp" value="ORDER">
+<div id="osszeg"></div>
 
+
+<button onclick="myFunction()" name="compact" class="btn btn-success btn-md">ORDER</button>
+
+
+<script>
+function myFunction() {
+  alert("CONGRATULATION!");
+}
+</script>
 </form>
-    
-<tabel>
-    <tr>
-        <th>price</th>
-        <th>package</th>
-        <th>color</th>
-        <th>doors</th>
-        <th>category</th>
-    </tr>
-        <c:forEach items="${order}" var="orders">
-    <tr>
-    	<td>${orders.price}</td>
-        <td>${orders.package}</td>
-        <td>${orders.category}</td>
-    </tr>
-	</c:forEach>
-</table>
 
 </body>

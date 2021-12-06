@@ -16,7 +16,7 @@
         <a href="register.jsp">REGISTER</a>
         <a class="active" href="carlist.jsp">CARLIST</a>
         <div id="profile"> <a class="active">User:<sec:authentication property="name"/></a></div>
-        <div> ${userbalance.userbalance}</div>
+        <div> ${userbalance.userbalance} </div>
         <div id="logout"> <a  class="btn btn-primary" href=<c:url value="/logout"/>>LOGOUT</a> </div>
       </div>
     
@@ -30,11 +30,11 @@
         </tr>
         <tr>
             <th><br><div class="form-group">
-                <input type="submit" name="pickup" class="btn btn-success btn-md" href="order.jsp" value="ORDER">
+                <a class="btn btn-success btn-md" href="/views/order.jsp" value="ORDER">ORDER</a>
             </div></th>
 
             <th><div class="form-group">
-                <input type="submit" name="suv" class="btn btn-success btn-md" href="order.jsp" value="ORDER">
+                    <a class="btn btn-success btn-md" href="/order" value="ORDER">ORDER</a>
             </div></th>
 
           </tr>
@@ -44,11 +44,11 @@
         </tr>
         <tr>
             <th><br><div class="form-group">
-                <input type="submit" name="sport+" class="btn btn-success btn-md" href="order.jsp" value="ORDER">
+                <a class="btn btn-success btn-md" href="order" value="ORDER">ORDER</a>
             </div></th>
 
             <th><br><div class="form-group">
-                <input type="submit" name="transit" class="btn btn-success btn-md" href="order.jsp" value="ORDER">
+                <a class="btn btn-success btn-md" href="order" value="ORDER">ORDER</a>
             </div></th>
             
           </tr>
@@ -58,11 +58,11 @@
         </tr>
         <tr>
             <th><br><div class="form-group">
-                <input type="submit" name="hothatch" class="btn btn-success btn-md" href="order.jsp" value="ORDER">
+                <a class="btn btn-success btn-md" href="order" value="ORDER">ORDER</a>
             </div></th>
 
             <th><br><div class="form-group">
-                <input type="submit" name="electric" class="btn btn-success btn-md" href="order.jsp" value="ORDER">
+                <a class="btn btn-success btn-md" href="order" value="ORDER">ORDER</a>
             </div></th>
             
           </tr>
@@ -72,11 +72,11 @@
         </tr>
         <tr>
             <th><br><div class="form-group">
-                <input type="submit" name="sport" class="btn btn-success btn-md" href="order.jsp" value="ORDER">
+                <a class="btn btn-success btn-md" href="order" value="ORDER">ORDER</a>
             </div></th>
 
             <th><br><div class="form-group">
-                <input type="submit" name="compact" class="btn btn-success btn-md" href="order.jsp" value="ORDER">
+                <a class="btn btn-success btn-md" href="order" value="ORDER">ORDER</a>
             </div></th>
             
           </tr>
