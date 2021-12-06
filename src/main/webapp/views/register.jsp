@@ -21,9 +21,9 @@
 </header>
 <body>
      <c:if test="${param.error!=null}">
-          <div>
-              something went wrong probably user alredy exists
-          </div>
+             <div class="alert alert-danger" role="alert">
+                   Username alredy in use 
+              </div>
         </c:if> 
     <div id="register">
         <!--<h3 class="text-center text-white pt-5">Register form</h3>-->

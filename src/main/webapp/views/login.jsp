@@ -22,9 +22,9 @@
 </header>
 <body>
     <c:if test="${param.error!=null}">
-          <div>
-              invalid username or password or one of our programmers fucked up something
-          </div>
+            <div class="alert alert-danger" role="alert">
+                invalid username or password
+            </div>
     </c:if> 
     
     <c:if test="{param.logout!=null}">

@@ -46,7 +46,7 @@ public class RegisterController {
          ubalaservice.insertuserbalance(user, 10000);
      } catch (Exception ex) {
          Logger.getLogger(RegisterController.class.getName()).log(Level.SEVERE, null, ex);
-         return "register";
+         return "register?error";
      }
     return "redirect:index";
     }
