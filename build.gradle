@@ -17,7 +17,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
         implementation 'org.springframework.boot:spring-boot-starter-security'
         implementation 'org.springframework.boot:spring-boot-starter-validation'
-	implementation "org.springframework.security:spring-security-taglibs"	
+	implementation 'org.springframework.security:spring-security-taglibs'
+        implementation 'org.springframework.security:spring-security-test'
         implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
         implementation 'javax.servlet:jstl'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'

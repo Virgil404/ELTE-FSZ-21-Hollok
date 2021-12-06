@@ -43,6 +43,7 @@
                                 <br>
                                 <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-danger btn-md" value="Register">
+                                <a class="btn btn-primary" href="/views/login.jsp" role="button">LOGIN</a>
                                 </div>
                             </div>
                         </form>

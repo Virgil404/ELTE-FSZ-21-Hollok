@@ -91,7 +91,8 @@
                             </div>
                             <br>
                             <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-danger btn-md" value="submit">
+                                <input type="submit" name="submit" class="btn btn-danger btn-md" value="SUBMIT">
+                            <a class="btn btn-primary" href="/views/register.jsp" role="button">REGISTER</a>
                             </div>
                         </form:form>
                     </div>

@@ -46,9 +46,9 @@ public class RegisterController {
          ubalaservice.insertuserbalance(user, 10000);
      } catch (Exception ex) {
          Logger.getLogger(RegisterController.class.getName()).log(Level.SEVERE, null, ex);
-         return "/views/register.jsp?error";
+         return "/views/register.jsp";
      }
-    return "redirect:/views/index.jsp";
+    return "redirect:/views/login.jsp";
     }
 
 

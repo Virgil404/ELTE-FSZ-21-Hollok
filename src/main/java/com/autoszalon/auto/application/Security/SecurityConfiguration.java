@@ -16,6 +16,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -30,15 +31,16 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
   
      @Override
-     protected void configure(HttpSecurity http) throws Exception{
+     protected void configure(final HttpSecurity http) throws Exception{
          http
             .authorizeRequests()
                  
-          .antMatchers("/views/index.jsp").permitAll()
+          .antMatchers("/views/index").permitAll()
           .antMatchers("/views/register.jsp").permitAll()
           .antMatchers("/h2-console/**").permitAll()
            .antMatchers("/views/css/login.css").permitAll()
            .antMatchers("/views/source/**").permitAll()
+           .antMatchers("/views/login.jsp").permitAll()
           .anyRequest().authenticated()
            .and()
                  .csrf().ignoringAntMatchers("/h2-console/**")
@@ -49,10 +51,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                  .loginPage("/login").permitAll()
                  .defaultSuccessUrl("/views/carlist.jsp", true)
           .and()
-                 .logout().permitAll()
-         .and().cors().and().csrf().disable();
+                 .logout()
+                 .permitAll()
+                 .logoutSuccessUrl("/views/index.jsp");
+                 //.logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"));
+                 
+         http.csrf().disable();
+        http.headers().frameOptions().disable();
          
-     
      }
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
