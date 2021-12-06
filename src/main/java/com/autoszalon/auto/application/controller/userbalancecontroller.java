@@ -30,12 +30,13 @@ public class userbalancecontroller {
     public String getloggedinuserBalance(Model model){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String currentPrincipalName = authentication.getName();
+        System.out.println(currentPrincipalName);
         if(currentPrincipalName==null){
         
         return"tamás";
         }
         float userbalance =userbalrep.finduserbalancebyusername(currentPrincipalName);
-        
+              System.out.println(userbalance);
         model.addAttribute( "userbalance",userbalance);
     
      return"carlist";
