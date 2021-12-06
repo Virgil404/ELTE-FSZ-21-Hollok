@@ -16,11 +16,11 @@
         <a href="register.jsp">REGISTER</a>
         <a href="login.jsp">LOGIN</a>
         <a class="active" href="carlist.jsp">CARLIST</a>
+        <div id="profile"> <a class="active">User:<sec:authentication property="name"/></a></div>
+        
+        <div id="logout"> <a  class="btn btn-primary" href=<c:url value="/logout"/>>LOGOUT</a> </div>
       </div>
-    <div>
-        <a class="btn btn-primary" href="<c:url value="/logout" />">LOGOUT</a>
-    </div>
-    User: <sec:authentication property="name"/>
+    
      
 </header>
 <body>

@@ -132,3 +132,11 @@ body {
     background-color: #000000;
     color: white;
   }
+  
+  #logout {
+      padding-left: 96%;
+  }
+  
+  #profile {
+      padding-left: 90%;
+  }
