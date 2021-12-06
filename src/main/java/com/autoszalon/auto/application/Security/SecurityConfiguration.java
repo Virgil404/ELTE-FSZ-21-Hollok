@@ -28,39 +28,26 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
-   /* 
-    @Override
-     protected void configure(AuthenticationManagerBuilder auth) throws Exception{
-          PasswordEncoder encoder= PasswordEncoderFactories.createDelegatingPasswordEncoder();
-    
-        auth
-            .inMemoryAuthentication()
-            .withUser("user")
-            .password(encoder.encode("password"))
-               
-     }
-    */
-    
-    
-     
+  
      @Override
      protected void configure(HttpSecurity http) throws Exception{
          http
-          .authorizeRequests()
+            .authorizeRequests()
+                 
           .antMatchers("/views/index.jsp").permitAll()
           .antMatchers("/views/register.jsp").permitAll()
           .antMatchers("/h2-console/**").permitAll()
-           .antMatchers("/views/css/**").permitAll()
+           .antMatchers("/views/css/login.css").permitAll()
            .antMatchers("/views/source/**").permitAll()
           .anyRequest().authenticated()
            .and()
-                .csrf().ignoringAntMatchers("/h2-console/**")
+                 .csrf().ignoringAntMatchers("/h2-console/**")
            .and()
                  .headers().frameOptions().sameOrigin()
            .and()
                 .formLogin()
                  .loginPage("/login").permitAll()
-                 .defaultSuccessUrl("/views/index.jsp", true)
+                 .defaultSuccessUrl("/views/carlist.jsp", true)
           .and()
                  .logout().permitAll()
          .and().cors().and().csrf().disable();

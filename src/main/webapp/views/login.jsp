@@ -11,15 +11,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
 <link href="css/login.css" rel="stylesheet">
 <!------ Include the above in your HEAD tag ---------->
+
+<style>
+    #login .container #login-row #login-column #login-box {
+    margin-top: 40%;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #9C9C9C;
+    background-color: #EAEAEA;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 33.1%;
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+  }
+  #login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+    font-family: 'Roboto Mono', monospace;
+  }
+  .footer {
+    background-color: #333;
+    color: blanchedalmond;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+  }
+  .link {
+    text-decoration: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #4e4e4e;
+    height: 100vh;
+  }
+</style>
+
 </head>
-<header>
+<!--<header>
     <div class="topnav">
         <a href="index.jsp">HOME</a>
         <a href="register.jsp">REGISTER</a>
         <a class="active" href="login.jsp">LOGIN</a>
         <a href="carlist.jsp">CARLIST</a>
       </div>
-</header>
+</header>-->
 <body>
     <c:if test="${param.error!=null}">
             <div class="alert alert-danger" role="alert">
@@ -61,9 +100,5 @@
         </div>
     </div>
 </body>
-<footer class="footer">
-    <img src="source/Interface_Facebook.png"> <a class="link" href="https://www.youtube.com/watch?v=jeg_TJvkSjg">FACEBOOK</a>
-    <img src="source/Interface_Twitter.png"> <a class="link" href="https://www.youtube.com/watch?v=OD3F7J2PeYU">TWITTER &#8192</a>
-    <img src="source/Interface_Youtube.png"> <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YOUTUBE</a>
-</footer>
+
 </html>

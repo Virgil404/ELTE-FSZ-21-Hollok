@@ -14,7 +14,6 @@
     <div class="topnav">
        <a href="index.jsp">HOME</a>
         <a class="active" href="register.jsp">REGISTER</a>
-        <a href="login.jsp">LOGIN</a>
         <a href="carlist.jsp">CARLIST</a> 
       </div>
     
