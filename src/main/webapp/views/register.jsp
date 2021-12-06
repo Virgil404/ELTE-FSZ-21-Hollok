@@ -14,7 +14,6 @@
     <div class="topnav">
        <a href="index.jsp">HOME</a>
         <a class="active" href="register.jsp">REGISTER</a>
-        <a href="carlist.jsp">CARLIST</a> 
       </div>
     
 </header>
@@ -43,7 +42,7 @@
                                 <br>
                                 <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-danger btn-md" value="REGISTER">
-                                <a class="btn btn-primary" href="/views/login.jsp" role="button">LOGIN</a>
+                                <a class="btn btn-primary" href="/login" role="button">LOGIN</a>
                                 </div>
                             </div>
                         </form>
